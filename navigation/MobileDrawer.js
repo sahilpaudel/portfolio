@@ -68,6 +68,7 @@ const MobileDrawer = () => {
               <Link
                 href={item.path}
                 key={item.text}
+                as={process.env.BACKEND_URL + item.path}
                 onClick={() => setOpen(false)}>
                 <ListItem button>
                   <ListItemIcon>

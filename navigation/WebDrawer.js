@@ -23,6 +23,7 @@ const WebDrawer = () => {
           {data.map((item, index) => (
             <Link
               href={item.path}
+              as={process.env.BACKEND_URL + item.path}
               key={item.text}>
               <ListItem button>
                 <ListItemIcon>
